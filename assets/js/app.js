@@ -64,4 +64,36 @@ $(document).ready(function(){
             }
         }
     });
+
+    $(".health-service").owlCarousel({
+        loop:true,
+        margin:10,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
 });
+
+var map;
+function initMap() {
+    var myLatLng = {lat: 36.778259, lng: -119.417931};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+    });
+}

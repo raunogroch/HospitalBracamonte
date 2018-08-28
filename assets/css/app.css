@@ -80,3 +80,26 @@
 .pb-10{
     padding-bottom: 10px;
 }
+
+.pl-40{
+    padding-left: 40px;
+}
+
+#map {
+    height: 250px;
+}
+
+.paddin-clear{
+    padding: 0;
+}
+
+.border-top-1{
+    border-top: 1px solid black;
+}
+
+.gmnoprint{
+    display: none;
+}
+.gm-control-active{
+    display: none;
+}
