@@ -35,3 +35,33 @@ function newsscoller(prev) {
     $('#mask-gallery').scrollTo(next_image, 800);
     $('#mask-excerpt').scrollTo(next_excerpt, 800);
 }
+
+
+// Carousel
+
+$(document).ready(function(){
+    $(".event-news").owlCarousel({
+        items:4,
+        center:true,
+        loop:true,
+        margin:0,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            100:{
+                items:1,
+            },
+            600:{
+                items:2,
+            },
+            1000:{
+                items:3,
+            },
+            1300:{
+                items:4,
+            }
+        }
+    });
+});
